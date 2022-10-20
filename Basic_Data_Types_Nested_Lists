@@ -1,0 +1,11 @@
+coupled = []
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        mark = [name,score]
+        coupled.append(mark)
+    
+second_low = sorted(set([i[1] for i in coupled]))
+slg = (second_low[1])
+print("\n".join(sorted([i[0] for i in coupled if i[1] == slg])))
