@@ -1,0 +1,24 @@
+# the following code should work but gives timeout error:
+from collections import Counter
+
+n = int(input())
+room_number_list = list(map(int, input().split()))
+for i in room_number_list:
+    if room_number_list.count(i)== 1:
+        print(i)
+        
+        
+        
+# working one
+
+from collections import Counter
+
+
+n = int(input())
+rooms = [int(x) for x in input().split()]
+cnt = Counter(rooms)
+
+for k,v in cnt.items():
+    if v == 1:
+        print(k)
+        break
