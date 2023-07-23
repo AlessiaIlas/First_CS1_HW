@@ -1,0 +1,6 @@
+def solve(s):
+        empt = ""
+        for name in s.split():
+            empt+= name.capitalize()
+            empt+= " "
+        return(empt)
